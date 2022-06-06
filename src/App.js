@@ -1,24 +1,23 @@
+import React, { Component,images }  from 'react';
+import myWonderfulImage from './images/image-one.jpg'
 import logo from './logo.svg';
-import './App.css';
+import './style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
+    <h1 className="title ">Mustapha</h1>
+    <br />
+    <img src="/logo512.png" alt="myimage" />
+
+    <br />
+     <img src={myWonderfulImage} alt ='myImage' width="500" height="600" />
+  </div>
+  <video width={320} height={240} controls="">
+    <source src="myVideo.mp4" type="video/mp4" />
+  </video>
+</>
   ); 
 }
 
