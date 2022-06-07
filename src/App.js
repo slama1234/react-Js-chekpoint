@@ -2,6 +2,7 @@ import React, { Component,images }  from 'react';
 import myWonderfulImage from './images/image-one.jpg'
 import logo from './logo.svg';
 import './style.css';
+import bird from './video/bird.mp4'
 
 function App() {
   return (
@@ -14,8 +15,11 @@ function App() {
     <br />
      <img src={myWonderfulImage} alt ='myImage' width="500" height="600" />
   </div>
-  <video width={320} height={240} controls="">
-    <source src="myVideo.mp4" type="video/mp4" />
+  <video loop autoPlay>
+    
+  </video>
+  <video width={350} height={300} controls="sds">
+    <source src={bird} type="video/mp4" />
   </video>
 </>
   ); 
